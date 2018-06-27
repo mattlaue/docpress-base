@@ -1,5 +1,7 @@
 # docpress-base
 
+This is a fork of [docpress/docpress-base](https://github.com//docpress/docpress-base), modifed to build the CSS via SCSS instead of Stylus.
+
 Base theme for Docpress. See [docpress] for documentation.
 
 ![Last version](https://img.shields.io/github/tag/docpress/docpress-base.svg?style=flat-square)
