@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    height: 100%;
+}
+
+html {
+    background: $bg;
+}

@@ -1,0 +1,29 @@
+//
+// Headings menu
+//
+ul.heading-list {
+  .hlink {
+      text-decoration: none;
+      padding: 6px 24px;
+      display: block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+
+      &,
+      &:visited {
+	  color: $accent;
+      }
+  }
+
+  .hlink:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+      height: 2px;
+      width: 12px;
+      background: $accent;
+      opacity: 0.3;
+  }
+}

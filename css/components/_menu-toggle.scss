@@ -1,0 +1,51 @@
+//
+// Menu toggle
+//
+$menu-size: 40px;
+
+.menu-toggle {
+
+    & {
+	display: none;
+	box-sizing: content-box;
+    }
+
+    @media (min-width: 769px) {
+	display: block;
+	width: $menu-size + 12px;
+	height: $menu-size + 12px;
+	line-height: $menu-size;
+	
+	position: fixed;
+	padding-left: 12px;
+	left: 0;
+	bottom: 0;
+	color: $font-color;
+	z-index: 10;
+	cursor: pointer;
+	background: transparent;
+    }
+
+    & {
+	// keep the white visible
+	transition: width 1ms linear 250ms, background-color 1ms linear 250ms, color 400ms linear;
+    }
+
+    .-menu-visible & {
+	width: $nav-width - 1px - 20px;
+	background-color: $bg;
+	transition: color 400ms linear;
+    }
+
+    &:before {
+	display: inline-block;
+	@include ion-icon('navicon', 24px);
+	text-align: center;
+	width: $menu-size;
+    }
+
+    &:hover {
+	color: $accent;
+	// transition: width 0 linear 250ms, background-color 0 linear 250ms, color 100ms linear
+    }
+}

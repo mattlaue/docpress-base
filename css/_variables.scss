@@ -1,0 +1,26 @@
+$white: #fff;
+$black: #111;
+$slate: #505d6b;
+
+$font-family: sans-serif !default;
+$font-weight: 500 !default;
+$font-weight-heading: 600 !default;
+$font-color: $black !default;
+$font-color-heading: $black !default;
+$font-color-blockquote: #777 !default;
+
+$bg: $white !default;
+$accent: #4078C0 !default;
+
+$nav-width: 250px;
+$collapsed-nav-width: 64px;
+$xpad: 24px;
+$line: rgba($black, 0.1);
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

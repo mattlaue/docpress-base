@@ -3,3 +3,4 @@ _docpress
 /cache
 /coverage
 .nyc_output
+/css/theme
